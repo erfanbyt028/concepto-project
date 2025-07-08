@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "MyFont";
+    src: url("../public/fonts/Iranian\ Sans.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
