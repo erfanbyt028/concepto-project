@@ -1,11 +1,10 @@
-import React from "react";
+ import React from "react";
 import img1 from "../assets/instruction_1.png";
 import img2 from "../assets/instruction_2.png";
 
 const InstructionCard = ({ imageSrc, text }) => {
   return (
      <div className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden w-[320px] h-[170px] sm:w-[390px] sm:h-[270px]">
-      {/* بخش تصویر - نمایش کامل بدون برش */}
       <div className="w-full h-[85px] sm:h-[135px] flex items-center justify-center bg-gray-100">
         <img
           src={imageSrc}
