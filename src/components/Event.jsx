@@ -61,20 +61,17 @@ const RecentEvents = () => {
               height: "140px",
             }}
           >
-            {/* تصویر سمت راست با انحنا و نوار زرد */}
             <div className="relative w-[40%] h-full">
               <svg
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
                 className="w-full h-full"
               >
-                {/* 🟨 نوار زرد هم‌راستا با انحنا */}
                 <path
                   d="M 26 0 Q -4 50 26 100 L 30 100 Q 0 50 30 0 Z"
                   fill="#f59e0b"
                 />
 
-                {/* 🖼️ تصویر داخل انحنای اصلی */}
                 <defs>
                   <clipPath id={`clip-${index}`}>
                     <path d="M 30 0 Q 0 50 30 100 L 100 100 L 100 0 Z" />
@@ -90,7 +87,6 @@ const RecentEvents = () => {
               </svg>
             </div>
 
-            {/* محتوای کارت */}
             <div className="flex-1 p-3 flex flex-col justify-around">
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-1 leading-snug line-clamp-2">
@@ -119,7 +115,6 @@ const RecentEvents = () => {
         ))}
       </div>
 
-      {/* سایز برای دسکتاپ */}
       <style jsx>{`
         @media (min-width: 1024px) {
           div[style*="330px"] {
