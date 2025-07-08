@@ -2,7 +2,7 @@ import React from "react";
 import { CalendarDays, User } from "lucide-react";
 import news1 from "../assets/news1.png";
 import news2 from "../assets/news2.png";
-import blueBg from "../assets/Banner.png"; // ← تصویر بک‌گراند آبی
+import blueBg from "../assets/Banner.png";
 
 const News = () => {
   const newsData = [
@@ -42,32 +42,28 @@ const News = () => {
 
   return (
     <div className="relative w-full bg-white pb-10 overflow-hidden md:hidden">
-      {/* تصویر پس‌زمینه آبی */}
       <div className="absolute top-0 left-0 w-full h-[180px] z-0 overflow-hidden">
         <img
           src={blueBg}
           alt="bg"
           className="w-full h-full object-cover"
           style={{
-            clipPath: "ellipse(140% 100% at 50% 0%)", // انحنای بالا
+            clipPath: "ellipse(140% 100% at 50% 0%)", 
           }}
         />
       </div>
 
       <div className="relative z-10 px-4 pt-6">
-        {/* تیتر سفید بالای بخش */}
         <h2 className="text-center text-white text-lg font-bold mb-6">
           تازه ترین اخبار
         </h2>
 
-        {/* کارت‌ها با اسکرول افقی و استایل دقیق‌تر */}
         <div className="flex gap-4 overflow-x-auto pb-2 scroll-smooth snap-x snap-mandatory">
           {newsData.map((item, index) => (
             <div
               key={index}
               className="flex-none w-[288px] h-[338px] bg-white rounded-[24px] shadow-[0_4px_20px_rgba(0,0,0,0.08)] text-right snap-center"
             >
-              {/* تصویر بالا */}
               <div className="overflow-hidden rounded-t-[24px]">
                 <img
                   src={item.img}
@@ -76,7 +72,6 @@ const News = () => {
                 />
               </div>
 
-              {/* محتوا */}
               <div className="p-4 flex flex-col justify-between h-[calc(100%-120px)]">
                 <div>
                   <p className="text-xs text-gray-500 mb-1">{item.category}</p>
