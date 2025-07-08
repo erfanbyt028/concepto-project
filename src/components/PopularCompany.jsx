@@ -3,7 +3,6 @@ import { FaStar } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 
-// --------- تصاویر ---------
 import snapCover from "../assets/PopularCompany3.jpg";
 import snapLogo from "../assets/snapplogo.png";
 import digiCover from "../assets/PopularCompany4.jpg";
@@ -69,7 +68,6 @@ const companies = [
 const PopularCompanies = () => {
   return (
     <section className="relative w-full overflow-hidden pb-10">
-      {/* بک‌گراند منحنی بالا */}
       <div className="absolute top-0 left-0 w-full h-[180px] z-0 overflow-hidden">
         <img
           src={banner}
@@ -81,7 +79,6 @@ const PopularCompanies = () => {
         />
       </div>
 
-      {/* انحنای سفید در پایین بک‌گراند */}
       <svg
         className="absolute top-[165px] md:top-[175px] left-0 w-full h-8 text-white z-10"
         viewBox="0 0 344 32"
@@ -90,7 +87,6 @@ const PopularCompanies = () => {
         <path d="M0 0 C86 32 258 32 344 0 L344 32 L0 32 Z" fill="currentColor" />
       </svg>
 
-      {/* محتوا */}
       <div dir="rtl" className="relative z-20 px-4 pt-8 max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <h2 className=" text-xl font-bold text-center text-white">
@@ -104,7 +100,6 @@ const PopularCompanies = () => {
         </div>
         
 
-        {/* کارت‌ها */}
         <div
           className="
             flex gap-5 overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar
@@ -120,7 +115,6 @@ const PopularCompanies = () => {
                 md:w-full md:h-[420px]
               "
             >
-              {/* تصویر بالا */}
               <div className="relative h-[140px]">
                 <img
                   src={c.image}
@@ -129,9 +123,7 @@ const PopularCompanies = () => {
                 />
               </div>
 
-              {/* بدنه کارت */}
               <div className="px-5 pt-5 pb-5">
-                {/* نام و لوگو */}
                 <div className="flex items-center gap-3 mb-2">
                   <img
                     src={c.logo}
@@ -144,7 +136,6 @@ const PopularCompanies = () => {
                   </div>
                 </div>
 
-                {/* تگ‌ها */}
                 <div className="flex gap-3 mb-5">
                   {c.tags.map((tag, i) => (
                     <div
@@ -161,7 +152,6 @@ const PopularCompanies = () => {
                   ))}
                 </div>
 
-                {/* مکان و امتیاز */}
                 <div className="flex items-center justify-between text-sm text-gray-500">
                   <div className="flex items-center gap-2">
                     <IoLocationOutline size={16} />
